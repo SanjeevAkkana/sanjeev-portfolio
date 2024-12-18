@@ -44,26 +44,6 @@ export const projects = [
 export const services = [
     {
         "id": 1,
-        "title": "Content Writing",
-        "description": [
-            "Professional content for blogs, YouTube talks, websites, and more.",
-            "Engage your audience with tailored content that speaks to their needs.",
-            "Increase brand visibility and online presence through high-quality writing.",
-            "Specialize in SEO-driven content to ensure higher reach and search engine ranking."
-        ],
-        "clients": [
-            "Startups looking to establish their online presence",
-            "Businesses aiming to boost their content marketing strategy",
-            "Creators and influencers in need of engaging scripts for YouTube or talks"
-        ],
-        "pricing": "Custom pricing based on project size",
-        "benefits": [
-            "Custom-made content that aligns with your brand's voice",
-            "On-time delivery and unlimited revisions until satisfaction"
-        ]
-    },
-    {
-        "id": 2,
         "title": "Website Development",
         "description": [
             "We build professional portfolio websites, business websites, and eCommerce platforms etc.,",
@@ -83,7 +63,7 @@ export const services = [
         ]
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "App Development",
         "description": [
             "Customized app development services tailored to your business ideas.",
@@ -101,7 +81,27 @@ export const services = [
             "Intuitive user experience (UX) and fast performance",
             "Regular app updates and improvements post-launch"
         ]
-    }
+    },
+    {
+        "id": 3,
+        "title": "Content Writing",
+        "description": [
+            "Professional content for blogs, YouTube talks, websites, and more.",
+            "Engage your audience with tailored content that speaks to their needs.",
+            "Increase brand visibility and online presence through high-quality writing.",
+            "Specialize in SEO-driven content to ensure higher reach and search engine ranking."
+        ],
+        "clients": [
+            "Startups looking to establish their online presence",
+            "Businesses aiming to boost their content marketing strategy",
+            "Creators and influencers in need of engaging scripts for YouTube or talks"
+        ],
+        "pricing": "Custom pricing based on project size",
+        "benefits": [
+            "Custom-made content that aligns with your brand's voice",
+            "On-time delivery and unlimited revisions until satisfaction"
+        ]
+    },
 ];
 
 export const steps = [

@@ -14,7 +14,7 @@ const HowWeWorkTogether = () => {
                         key={step.step}
                         className="relative font-mono bg-white border-l-4 border-black rounded-lg p-6 hover:shadow-3xl shadow-xl transition-shadow duration-300"
                     >
-                        <h3 className="font-mono text-xl font-semibold text-gray-900 mb-4">{step.title}</h3>
+                        <h3 className="font-mono text-lg font-bold text-gray-900 mb-4">{step.title}</h3>
                         <p className="text-sm text-gray-600">{step.description}</p>
                     </div>
                 ))}
