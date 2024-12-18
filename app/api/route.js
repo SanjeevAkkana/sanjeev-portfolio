@@ -1,5 +1,31 @@
 import nodemailer from 'nodemailer';
 
+export async function GET(request) {
+  try {
+    return new Response(
+      JSON.stringify({ message: "GET POST" }), 
+      {
+        status: 200, // Status code indicating success
+        headers: {
+          "Content-Type": "application/json" // Specifying JSON response format
+        }
+      }
+    );
+  } catch (error) {
+    console.error("Error:", error); // Log the error for debugging
+    return new Response(
+      JSON.stringify({ error: "An error occurred" }),
+      {
+        status: 500, // Status code for server error
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
+    );
+  }
+}
+
+
 export async function POST(request) {
   try {
     const { name, email, message } = await request.json();
