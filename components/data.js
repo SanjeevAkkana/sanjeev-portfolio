@@ -1,108 +1,122 @@
 export const projects = [
     {
-        "title": "Nota",
-        "duration": "Aug 2024 - Nov 2024",
-        "description": [
+        title: "Nota",
+        duration: "Aug 2024 - Nov 2024",
+        description: [
             "A productivity application designed for students, built with React Native, Express.js, and MongoDB.",
             "Features task management, a Pomodoro timer, and real-time doubt resolution via the Gemini API.",
-            "Enhanced skills in API integration, responsive design, and backend development."
+            "Enhanced skills in API integration, responsive design, and backend development.",
         ],
-        "skills": ["MongoDB", "React Native", "Express.js", "Google Gemini", "Redux.js", "API Development"]
+        skills: ["MongoDB", "React Native", "Express.js", "Google Gemini", "Redux.js", "API Development"],
+        github: "https://github.com/SanjeevAkkana/nota-backend",
+        linkedin: "https://www.linkedin.com/in/akkana-sanjeev/details/projects/",
     },
     {
-        "title": "MS Thoughts",
-        "duration": "Jul 2024 - Aug 2024",
-        "description": [
+        title: "MS Thoughts",
+        duration: "Jul 2024 - Aug 2024",
+        description: [
             "A blogging platform built using Next.js and MongoDB, designed for sharing knowledge across various topics.",
             "Implemented server-side rendering, responsive design, and user-friendly content management.",
-            "Improved backend integration and optimized for SEO."
+            "Improved backend integration and optimized for SEO.",
         ],
-        "skills": ["Next.js", "MongoDB", "Tailwind CSS"]
+        skills: ["Next.js", "MongoDB", "Tailwind CSS"],
+        github: "",
+        linkedin: "https://www.linkedin.com/in/akkana-sanjeev/details/projects/",
     },
     {
-        "title": "Simple Guide",
-        "duration": "Sep 2023 - Nov 2023",
-        "description": [
+        title: "Simple Guide",
+        duration: "Sep 2023 - Nov 2023",
+        description: [
             "A service-oriented platform built with the MERN stack and Headless UI for blogs, events, and paid services.",
             "Focused on API integration, user interface best practices, and seamless user experience.",
-            "Provided services for web and application development, and content creation."
+            "Provided services for web and application development, and content creation.",
         ],
-        "skills": ["React.js", "Express.js", "MongoDB", "Tailwind CSS", "API Development"]
+        skills: ["React.js", "Express.js", "MongoDB", "Tailwind CSS", "API Development"],
+        githubFrontend: "https://github.com/SanjeevAkkana/simpleguidefrontend",
+        githubBackend: "https://github.com/SanjeevAkkana/SimpleGuideBackend",
+        liveLink: "https://simple-guide.vercel.app/",
+        linkedin: "https://www.linkedin.com/in/akkana-sanjeev/details/projects/",
     },
     {
-        "title": "PyP2",
-        "duration": "Jul 2021 - Aug 2021",
-        "description": [
+        title: "PyP2",
+        duration: "Jul 2021 - Aug 2021",
+        description: [
             "An educational application for Python PUC-2 built on the Kodular platform.",
             "Focused on enhancing application performance, integrating educational tools, and creating a lightweight, interactive experience for students.",
-            "Improved problem-solving skills and mobile development capabilities."
+            "Improved problem-solving skills and mobile development capabilities.",
         ],
-        "skills": ["Kodular"]
-    }
-]
+        skills: ["Kodular"],
+        github: "",
+        linkedin: "https://www.linkedin.com/in/akkana-sanjeev/details/projects/",
+    },
+];
 
 export const services = [
     {
-        "id": 1,
-        "title": "Website Development",
-        "description": [
-            "We build professional portfolio websites, business websites, and eCommerce platforms etc.,",
+        id: 1,
+        title: "Website Development",
+        description: [
+            "Build professional portfolio websites, business websites, and eCommerce platforms.",
             "Sleek and responsive designs optimized for both desktop and mobile.",
             "Scalable solutions with integrated features to meet your business needs.",
-            "Reliable websites built with cutting-edge technologies."
+            "Reliable websites built with cutting-edge technologies like React.js, Next.js, and Tailwind CSS.",
         ],
-        "clients": [
+        clients: [
             "Individuals seeking a professional portfolio",
             "Startups with limited budgets but a high need for customization",
-            "Small to large businesses needing eCommerce functionality"
+            "Small to large businesses needing eCommerce functionality",
         ],
-        "pricing": "Custom pricing based on project size",
-        "benefits": [
+        pricing: "Custom pricing based on project size",
+        benefits: [
             "Responsive, mobile-friendly designs",
-            "SEO-optimized websites to enhance search engine rankings"
-        ]
+            "SEO-optimized websites to enhance search engine rankings",
+            "Fast load times and secure hosting",
+        ],
     },
     {
-        "id": 2,
-        "title": "App Development",
-        "description": [
+        id: 2,
+        title: "App Development",
+        description: [
             "Customized app development services tailored to your business ideas.",
-            "Expert solutions for both iOS and Android apps.",
+            "Expert solutions for both iOS and Android apps using React Native.",
             "Complete solutions, from ideation and design to deployment.",
-            "Improve business efficiency and engagement with user-friendly apps."
+            "Improve business efficiency and engagement with user-friendly apps.",
         ],
-        "clients": [
+        clients: [
             "Tech startups looking to scale their mobile offerings",
             "Established businesses needing app solutions to streamline operations",
-            "Individuals with great ideas, looking to make them mobile-first"
+            "Individuals with great ideas, looking to make them mobile-first",
         ],
-        "pricing": "Custom pricing based on project size",
-        "benefits": [
+        pricing: "Custom pricing based on project size",
+        benefits: [
             "Intuitive user experience (UX) and fast performance",
-            "Regular app updates and improvements post-launch"
-        ]
+            "Regular app updates and improvements post-launch",
+            "Cross-platform compatibility for wider reach",
+        ],
     },
     {
-        "id": 3,
-        "title": "Content Writing",
-        "description": [
+        id: 3,
+        title: "Content Writing",
+        description: [
             "Professional content for blogs, YouTube talks, websites, and more.",
             "Engage your audience with tailored content that speaks to their needs.",
             "Increase brand visibility and online presence through high-quality writing.",
-            "Specialize in SEO-driven content to ensure higher reach and search engine ranking."
+            "Specialize in SEO-driven content to ensure higher reach and search engine ranking.",
         ],
-        "clients": [
+        clients: [
             "Startups looking to establish their online presence",
             "Businesses aiming to boost their content marketing strategy",
-            "Creators and influencers in need of engaging scripts for YouTube or talks"
+            "Creators and influencers in need of engaging scripts for YouTube or talks",
         ],
-        "pricing": "Custom pricing based on project size",
-        "benefits": [
+        pricing: "Custom pricing based on project size",
+        benefits: [
             "Custom-made content that aligns with your brand's voice",
-            "On-time delivery and unlimited revisions until satisfaction"
-        ]
+            "On-time delivery and unlimited revisions until satisfaction",
+            "SEO-optimized content to drive organic traffic",
+        ],
     },
 ];
+
 
 export const steps = [
     {

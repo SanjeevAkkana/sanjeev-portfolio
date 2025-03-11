@@ -1,38 +1,41 @@
-'use client'
+'use client';
 
-import { motion } from "framer-motion";
-import AboutSection from "@/components/AboutSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
-import HowWeWorkTogether from "@/components/HowWeWorkTogether";
-import Navbar from "@/components/Navbar";
-import ProjectSection from "@/components/ProjectSection";
-import ServiceSection from "@/components/ServiceSection";
-import SkillsSection from "@/components/SkillsSection";
+import { motion } from 'framer-motion';
+import AboutSection from '@/components/AboutSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
+import HeroSection from '@/components/HeroSection';
+import HowWeWorkTogether from '@/components/HowWeWorkTogether';
+import Navbar from '@/components/Navbar';
+import ProjectSection from '@/components/ProjectSection';
+import ServiceSection from '@/components/ServiceSection';
+import SkillsSection from '@/components/SkillsSection';
 
 export default function Home() {
   return (
-    <div className="bg-white max-w-screen">
+    <div className="bg-white w-full overflow-hidden">
+      {/* Navbar */}
       <Navbar />
+
       {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        whileOutOfView={{ opacity: 0, y: -50 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
+        className="md:px-12 sm:p-6 p-4"
       >
         <HeroSection />
       </motion.div>
 
       {/* About Section */}
       <motion.div
+        id="about"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        whileOutOfView={{ opacity: 0, y: -50 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
+        className="md:px-12 sm:p-6 p-4"
       >
         <AboutSection />
       </motion.div>
@@ -41,9 +44,10 @@ export default function Home() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        whileOutOfView={{ opacity: 0, y: -50 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
+        className="md:px-12 sm:p-6 p-4"
+        id="skills"
       >
         <SkillsSection />
       </motion.div>
@@ -52,9 +56,10 @@ export default function Home() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        whileOutOfView={{ opacity: 0, y: -50 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
+        className="md:px-12 sm:p-6 p-4"
+        id="projects"
       >
         <ProjectSection />
       </motion.div>
@@ -63,9 +68,10 @@ export default function Home() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        whileOutOfView={{ opacity: 0, y: -50 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
+        className="md:px-12 sm:p-6 p-4"
+        id="services" 
       >
         <ServiceSection />
       </motion.div>
@@ -74,9 +80,9 @@ export default function Home() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        whileOutOfView={{ opacity: 0, y: -50 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
+        className="md:px-12 sm:p-6 p-4"
       >
         <HowWeWorkTogether />
       </motion.div>
@@ -85,9 +91,10 @@ export default function Home() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        whileOutOfView={{ opacity: 0, y: -50 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
+        className="md:px-12 sm:p-6 p-4"
+         id="contact"
       >
         <ContactSection />
       </motion.div>

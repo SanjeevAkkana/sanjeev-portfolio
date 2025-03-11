@@ -1,45 +1,118 @@
-'use client'
+'use client';
 
+import { motion } from 'framer-motion';
 import { projects } from './data';
 
-const ProjectSection = () => {
+const ProjectsSection = () => {
   return (
-    <div id="projects" className="w-full py-16 px-8 sm:px-14 z-0 mt-20 pt-24">
-      <div>
-        <h2 className="border-l-4 border-black px-4 font-mono text-xl font-bold mb-8">
-          3. Projects Section
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="projects" className="w-full bg-white">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Title with fade-in animation */}
+        <motion.h2
+          className="border-l-8 border-green-800 pl-2 font-sans text-3xl font-medium text-gray-900 mb-8"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, ease: 'easeOut' }}
+        >
+          3. My Projects
+        </motion.h2>
+
+        {/* Project Cards */}
+        <div className="space-y-8">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-white font-mono border-l-4 border-black rounded-lg p-6 hover:shadow-3xl shadow-xl transition-shadow duration-300"
+              className="bg-white p-6 rounded-lg border-l-4 border-green-800 shadow-sm hover:shadow-md transition-shadow duration-300"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, ease: 'easeOut', delay: index * 0.1 }}
             >
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{project.title}</h3>
-              <p className="text-sm text-gray-500 mb-4">{project.duration}</p>
-              <ul className="list-disc pl-5 mb-4">
-                {project.description.map((point, idx) => (
-                  <li key={idx} className="text-gray-700 text-sm mb-2">
-                    {point}
+              {/* Project Title and Duration */}
+              <h3 className="text-xl font-sans font-medium text-gray-900 mb-2">
+                {project.title}
+              </h3>
+              <p className="text-xs font-sans text-gray-500 mb-4">
+                {project.duration}
+              </p>
+
+              {/* Project Description */}
+              <ul className="list-disc list-inside space-y-2 mb-4">
+                {project.description.map((desc, i) => (
+                  <li key={i} className="font-sans text-sm text-gray-700">
+                    {desc}
                   </li>
                 ))}
               </ul>
-              <div className="flex flex-wrap gap-2">
-                {project.skills.map((skill, idx) => (
+
+              {/* Skills Used */}
+              <div className="flex flex-wrap gap-2 mb-6">
+                {project.skills.map((skill, i) => (
                   <span
-                    key={idx}
-                    className="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-md"
+                    key={i}
+                    className="bg-green-100 text-green-800 text-xs font-sans px-3 py-1 rounded-full"
                   >
                     {skill}
                   </span>
                 ))}
               </div>
-            </div>
+
+              {/* Links */}
+              <div className="flex flex-wrap gap-4">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-sans text-sm border px-2 py-1 border-green-800 text-green-600 hover:text-green-800 transition-colors duration-300"
+                  >
+                    GitHub
+                  </a>
+                )}
+                {project.githubFrontend && (
+                  <a
+                    href={project.githubFrontend}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-sans text-sm border px-2 py-1 border-green-800 text-green-600 hover:text-green-800 transition-colors duration-300"
+                  >
+                    GitHub (Frontend)
+                  </a>
+                )}
+                {project.githubBackend && (
+                  <a
+                    href={project.githubBackend}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-sans text-sm border px-2 py-1 border-green-800 text-green-600 hover:text-green-800 transition-colors duration-300"
+                  >
+                    GitHub (Backend)
+                  </a>
+                )}
+                {project.liveLink && (
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-sans text-sm border px-2 py-1 border-green-800  text-green-600 hover:text-green-800 transition-colors duration-300"
+                  >
+                    Live Demo
+                  </a>
+                )}
+                <a
+                  href={project.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-sans text-sm border px-2 py-1 border-green-800 text-green-600 hover:text-green-800 transition-colors duration-300"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default ProjectSection;
+export default ProjectsSection;

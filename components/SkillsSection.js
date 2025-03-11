@@ -1,44 +1,48 @@
-'use client'
+'use client';
 
-import { skills } from "./data";
+import { skills } from './data';
 import { motion } from 'framer-motion';
 
 const SkillsSection = () => {
-    return (
-        <div id="skills" className="w-full bg-white pt-24 px-8 sm:px-14 z-0">
-            <div className="h-full w-full">
-                {/* Section Title with fade-in animation */}
-                <motion.h2 
-                  className="border-l-4 border-black px-2 font-mono text-xl font-bold mb-8"
-                  initial={{ opacity: 0 }} 
-                  whileInView={{ opacity: 1 }} 
-                  transition={{ duration: 1, ease: 'easeOut' }}>
-                    2. Skills Section
-                </motion.h2>
+  return (
+    <section id="skills" className="w-full bg-white">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Title with fade-in animation */}
+        <motion.h2
+          className="border-l-8 border-green-800 pl-2 font-sans text-3xl font-medium text-gray-900 mb-8"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, ease: 'easeOut' }}
+        >
+          My Skills
+        </motion.h2>
 
-                {/* Grid for skill cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-                    {skills.map((skill, index) => (
-                        <div
-                            key={index}
-                            className="bg-white p-4 rounded-lg hover:shadow-3xl border-l-4 border-black shadow-xl transition-shadow duration-300"
-                            initial={{ opacity: 0, y: 50 }} 
-                            whileInView={{ opacity: 1, y: 0 }} 
-                            transition={{ duration: 0.8, ease: 'easeOut', delay: index * 0.025 }}>
-                            {/* Skill Card Content */}
-                            <h3 className="text-lg font-mono font-bold text-black mb-2">
-                                {skill.skill}
-                            </h3>
-                            <p className="text-xs font-mono text-gray-500">{skill.year}</p>
-                            <p className="mt-2 font-mono text-sm text-gray-900">
-                                {skill.description}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </div>
+        {/* Grid for skill cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={index}
+              className="bg-white p-6 rounded-lg border-l-4 border-green-800 shadow-sm hover:shadow-md transition-shadow duration-300"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, ease: 'easeOut', delay: index * 0.1 }}
+            >
+              {/* Skill Card Content */}
+              <h3 className="text-xl font-sans font-medium text-gray-900 mb-2">
+                {skill.skill}
+              </h3>
+              <p className="text-xs font-sans text-gray-500 mb-4">
+                {skill.year}
+              </p>
+              <p className="font-sans text-sm text-gray-700 leading-relaxed">
+                {skill.description}
+              </p>
+            </motion.div>
+          ))}
         </div>
-    );
+      </div>
+    </section>
+  );
 };
 
 export default SkillsSection;

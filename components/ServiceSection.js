@@ -1,53 +1,81 @@
-'use client'
+'use client';
 
+import { motion } from 'framer-motion';
 import { services } from './data';
 
 const ServiceSection = () => {
   return (
-    <div id="services" className="w-full bg-white px-8 sm:px-14 pt-24">
-      <h2 className="border-l-4 border-black pl-4 font-mono text-xl font-bold mb-8">
-        4. Service Section
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map(service => (
-          <div
-            key={service.id}
-            className="bg-white font-mono border-l-4 border-black rounded-lg p-6 hover:shadow-3xl shadow-xl transition-shadow duration-300"
-          >
-            <h3 className="text-lg font-bold text-gray-900 mb-2">{service.title}</h3>
-            <p className="text-sm text-gray-500 mb-4">{service.pricing}</p>
+    <section className="w-full bg-white">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Title with fade-in animation */}
+        <motion.h2
+          className="border-l-8 border-green-800 pl-2 font-sans text-3xl font-medium text-gray-900 mb-8"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, ease: 'easeOut' }}
+        >
+          4. My Services
+        </motion.h2>
 
-            <ul className="list-disc pl-5 mb-4">
-              {service.description.map((point, idx) => (
-                <li key={idx} className="text-gray-700 text-sm mb-2">
-                  {point}
-                </li>
-              ))}
-            </ul>
-            
-            {/* Clients and their Benefits */}
-            <div className="mb-4">
-              <h4 className="font-semibold text-sm text-gray-800 mb-2">Clients:</h4>
-              <ul className="list-inside list-disc pl-5 text-gray-700">
-                {service.clients.map((client, idx) => (
-                  <li key={idx} className="text-sm">{client}</li>
+        {/* Grid for service cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service) => (
+            <motion.div
+              key={service.id}
+              className="bg-white p-6 rounded-lg border-l-4 border-green-800 shadow-sm hover:shadow-md transition-shadow duration-300"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
+            >
+              {/* Service Title and Pricing */}
+              <h3 className="text-xl font-sans font-medium text-gray-900 mb-2">
+                {service.title}
+              </h3>
+              <p className="text-xs font-sans text-gray-500 mb-4">
+                {service.pricing}
+              </p>
+
+              {/* Service Description */}
+              <ul className="list-disc list-inside space-y-2 mb-6">
+                {service.description.map((point, idx) => (
+                  <li key={idx} className="font-sans text-sm text-gray-700">
+                    {point}
+                  </li>
                 ))}
               </ul>
-            </div>
 
-            {/* Benefits section */}
-            <div>
-              <h4 className="font-semibold text-sm text-gray-800 mb-2">Benefits:</h4>
-              <ul className="list-inside list-disc pl-5 text-gray-700">
-                {service.benefits.map((benefit, idx) => (
-                  <li key={idx} className="text-sm">{benefit}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))}
+              {/* Clients Section */}
+              <div className="mb-6">
+                <h4 className="font-sans font-medium text-gray-800 mb-2">
+                  Ideal For:
+                </h4>
+                <ul className="list-disc list-inside space-y-1">
+                  {service.clients.map((client, idx) => (
+                    <li key={idx} className="font-sans text-sm text-gray-700">
+                      {client}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Benefits Section */}
+              <div>
+                <h4 className="font-sans font-medium text-gray-800 mb-2">
+                  What You Get:
+                </h4>
+                <ul className="list-disc list-inside space-y-1">
+                  {service.benefits.map((benefit, idx) => (
+                    <li key={idx} className="font-sans text-sm text-gray-700">
+                      {benefit}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
