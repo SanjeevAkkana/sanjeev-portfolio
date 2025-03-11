@@ -11,11 +11,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full bg-white fixed p-4 sm:px-6 lg:px-12 flex justify-between items-center z-50 shadow-sm">
+    <nav className="w-full bg-white p-4 sm:px-6 lg:px-12 flex justify-between items-center z-50 shadow-sm">
       {/* Left Section: Logo and Branding */}
       <div className="flex justify-center items-center gap-x-1">
-        <Link href="/" className="text-2xl font-medium font-sans transition-colors">
-          Portfolio.
+        <Link href="/" className="text-2xl text-green-950 font-medium font-sans transition-colors">
+          Portfolio
         </Link>
       </div>
 

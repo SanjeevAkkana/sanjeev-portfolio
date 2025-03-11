@@ -1,5 +1,6 @@
 import { Arsenal_SC } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 // Using Arsenal font
 const arsenalFont = Arsenal_SC({
@@ -36,7 +37,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${arsenalFont.variable} antialiased bg-gray-100`}
       >
-        <main>{children}</main>
+         <div className="sticky top-0 pt-0 z-50">
+          <Navbar />
+        </div>
+        {children}
       </body>
     </html>
   );

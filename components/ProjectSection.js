@@ -5,7 +5,7 @@ import { projects } from './data';
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="w-full bg-white">
+    <section className="w-full bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Title with fade-in animation */}
         <motion.h2
@@ -14,7 +14,7 @@ const ProjectsSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, ease: 'easeOut' }}
         >
-          3. My Projects
+          My Projects
         </motion.h2>
 
         {/* Project Cards */}

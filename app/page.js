@@ -14,16 +14,13 @@ import SkillsSection from '@/components/SkillsSection';
 export default function Home() {
   return (
     <div className="bg-white w-full overflow-hidden">
-      {/* Navbar */}
-      <Navbar />
-
       {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="md:px-12 sm:p-6 p-4"
+        className="md:px-12 sm:px-6 px-4"
       >
         <HeroSection />
       </motion.div>
@@ -35,7 +32,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="md:px-12 sm:p-6 p-4"
+        className="md:px-12 py-20 sm:px-6 px-4"
       >
         <AboutSection />
       </motion.div>
@@ -46,7 +43,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="md:px-12 sm:p-6 p-4"
+        className="md:px-12 py-20 sm:px-6 px-4"
         id="skills"
       >
         <SkillsSection />
@@ -58,7 +55,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="md:px-12 sm:p-6 p-4"
+        className="md:px-12 py-20 sm:px-6 px-4"
         id="projects"
       >
         <ProjectSection />
@@ -70,7 +67,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="md:px-12 sm:p-6 p-4"
+        className="md:px-12 py-20 sm:px-6 px-4"
         id="services" 
       >
         <ServiceSection />
@@ -82,7 +79,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="md:px-12 sm:p-6 p-4"
+        className="md:px-12 md:py-20 p-4"
       >
         <HowWeWorkTogether />
       </motion.div>
@@ -93,7 +90,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="md:px-12 sm:p-6 p-4"
+        className="md:px-12 py-20 sm:px-6 px-4"
          id="contact"
       >
         <ContactSection />

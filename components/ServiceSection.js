@@ -14,7 +14,7 @@ const ServiceSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, ease: 'easeOut' }}
         >
-          4. My Services
+          My Services
         </motion.h2>
 
         {/* Grid for service cards */}
