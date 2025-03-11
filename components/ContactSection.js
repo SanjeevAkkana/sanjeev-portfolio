@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="w-full">
+    <section className="w-full">
       <div className="max-w-7xl mx-auto">
         {/* Section Title with fade-in animation */}
         <motion.h2

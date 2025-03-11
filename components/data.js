@@ -120,30 +120,35 @@ export const services = [
 
 export const steps = [
     {
-        "step": 1,
-        "title": "Step 1: Reach Out & Connect",
-        "description": "Start by reaching out through our contact form or email to express your project interest. We make communication easy, so you're never far from help."
+        step: 1,
+        title: "Step 1: Reach Out & Connect",
+        description:
+            "Start by reaching out through our contact form or email to express your project interest. We make communication easy, so you're never far from help.",
     },
     {
-        "step": 2,
-        "title": "Step 2: Share Your Vision",
-        "description": "Tell us all about your project! Share the scope, your ideas, and the ultimate goals. We’re ready to listen and understand your vision clearly."
+        step: 2,
+        title: "Step 2: Share Your Vision",
+        description:
+            "Tell us all about your project! Share the scope, your ideas, and the ultimate goals. We’re ready to listen and understand your vision clearly.",
     },
     {
-        "step": 3,
-        "title": "Step 3: Schedule a Consultation Call",
-        "description": "Let's have a personal touch. We schedule a call or meeting to discuss your vision in depth and align on the best approach. This is where the magic happens!"
+        step: 3,
+        title: "Step 3: Schedule a Consultation Call",
+        description:
+            "Let's have a personal touch. We schedule a call or meeting to discuss your vision in depth and align on the best approach. This is where the magic happens!",
     },
     {
-        "step": 4,
-        "title": "Step 4: Set Clear Expectations & Details",
-        "description": "We outline key project elements, including timelines, deliverables, and pricing. Everything will be clear, from the start to the finish, ensuring no surprises along the way."
+        step: 4,
+        title: "Step 4: Set Clear Expectations & Details",
+        description:
+            "We outline key project elements, including timelines, deliverables, and pricing. Everything will be clear, from the start to the finish, ensuring no surprises along the way.",
     },
     {
-        "step": 5,
-        "title": "Step 5: We Bring Your Ideas to Life",
-        "description": "Once we have everything in place, we get to work! Our goal is to deliver excellence while maintaining communication throughout the process. It’s time to build your project with precision."
-    }
+        step: 5,
+        title: "Step 5: We Bring Your Ideas to Life",
+        description:
+            "Once we have everything in place, we get to work! Our goal is to deliver excellence while maintaining communication throughout the process. It’s time to build your project with precision.",
+    },
 ];
 
 export const skills = [

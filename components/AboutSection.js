@@ -6,7 +6,6 @@ import Link from 'next/link';
 const AboutSection = () => {
   return (
     <section
-      id="about"
       className="w-full"
     >
 

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="w-full bg-white">
+    <section className="w-full bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Title with fade-in animation */}
         <motion.h2
